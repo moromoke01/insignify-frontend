@@ -1,0 +1,159 @@
+/* VerificationPage.css */
+
+/* Body container */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f0ff; /* Light purple background color */
+  }
+  .cont{
+    background: #ffffff;
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    /* display: flex; */
+    flex-direction: row;
+    border-radius: 5px;
+  }
+
+  .email-image{
+    width: 30%;
+    padding-left: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .email-image img{
+    max-width: 400px;
+    /* width: 100%; */
+    transform:rotate(-20deg) ; 
+  }
+
+  .circled-number{
+    width: 30px;
+    padding: 18px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top:28%;
+    left: 85%;
+    border-radius: 50%;
+    background: #7a0404;
+    color: #ccc9c9;
+  }
+
+  .circled-number::after{
+    content: '1';
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  /* Form container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px; /* Adjusted width for better fit */
+    border: 4px solid black; /* Add black border color and increase border thickness */
+    background: #fff;
+    padding: 30px; /* Removed duplicate padding property */
+    border-radius: 40px; /* Adjusted border-radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .header {
+    /* display: flex;
+    flex-direction: column; */
+   font-size: 24px;
+   color: #9c13be; 
+  }
+
+  .v-text {
+    color: #7c095f;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Verification code styling */
+  .verify-content{
+    width: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* background: #9c13be; */
+   padding-right: 1em;
+  }
+  .verification-code {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .verification-code input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 5px;
+  }
+  
+  /* Submit button styling */
+  .submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    width: 7em;
+    height: 45px;
+    background: #7c095f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .submit:hover {
+    background: #7a0d92;
+  }
+
+  @media screen and (max-width: 900px) {
+    .email-image{
+      display: none;
+    }
+
+.verify-content{
+  padding: 0 20px;
+  width: 100%;
+  }    
+
+  .verification-code input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: 5px;
+  }
+}
+  
